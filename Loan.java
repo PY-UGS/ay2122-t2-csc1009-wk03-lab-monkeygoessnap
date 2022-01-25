@@ -61,7 +61,6 @@ public class Loan {
     }
 
     public double getTotalPayment() {
-        // double totalPayment = this.loanAmt * Math.pow((1 + (this.annualIntRate/100)), this.numYears);
         double totalPayment = this.getMonthlyPayment() * this.numYears * 12;
 
         return totalPayment;
